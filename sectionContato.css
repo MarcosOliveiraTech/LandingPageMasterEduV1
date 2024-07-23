@@ -1,0 +1,161 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+}
+
+#contato {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: #333;
+}
+
+textarea {
+    height: 150px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #999;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.special-button {
+    padding: 8px 16px;
+    border: 2px solid;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* Classe para estilização do botão VERMELHO ----------------------------- */
+.special-button.red {
+    border-color: gray;
+    color: gray;
+    font-weight: bold;
+    height: 60px;
+    width: 30%;
+    
+}
+
+.special-button.red:hover {
+    
+    border-color: red;
+    color: red;
+    font-weight: bold;
+    transition: border-color 0.4s ease, color 0.4s ease, font-weight 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.37);
+
+}
+
+
+/* Classe para estilização do botão Verde ----------------------------- */
+.special-button.green {
+    border-color: gray;
+    color: gray;
+    font-weight: bold;
+    height: 60px;
+    width: 30%;
+    
+    
+}
+
+.special-button.green:hover {
+    font-weight: bold;
+    height: 60px;
+    width: 30%;
+    border-color: green;
+    color: green;
+    transition: border-color 0.4s ease, color 0.4s ease, font-weight 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.37);
+    
+}
+
+
+/* Classe para estilização do botão Azul ----------------------------- */
+.special-button.blue {
+    border-color: gray;
+    color: gray;
+    font-weight: bold;
+    height: 60px;
+    width: 30%;
+    
+    
+}
+
+.special-button.blue:hover {
+    font-weight: bold;
+    height: 60px;
+    width: 30%;
+    border-color: blue;
+    color: blue;
+    transition: border-color 0.4s ease, color 0.4s ease, font-weight 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.37);
+    
+}
+
+.main-button {
+    background-color: orange;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    height: 70px;
+    font-size: 18px;
+}
+
+.main-button:hover {
+    box-shadow: 0 0 10px orange;
+}
+
+/* Atualizações --------------------------------------------------------------------------------*/
+
+.botoes {
+/* background-color: #000; */
+
+
+justify-content: center;
+text-align: center;
+display: flex;
+flex-direction:row;
+align-items: start;
+
+
+}
+
+.texto {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+

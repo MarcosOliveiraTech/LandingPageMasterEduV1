@@ -1,0 +1,68 @@
+/* Reset básico */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilo do controle de navegação */
+nav ul {
+    list-style-type: none; /* Remove os marcadores */
+    display: flex; /* Navegação horizontal */
+    justify-content: center; /* Centraliza os itens */
+    background-color: #333; /* Fundo cinza escuro */
+    padding: 10px 0; /* Espaçamento interno */
+}
+
+nav ul li {
+    margin: 0 20px; /* Espaçamento entre os itens */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold; /* Negrito */
+    font-family: 'Montserrat', sans-serif; /* Fonte Montserrat */
+    color: #696969; /* Cinza escuro */
+    transition: color 0.3s ease; /* Transição suave */
+}
+
+nav ul li a:hover {
+    color: #e65c01; /* Branco ao sobrepor o mouse */
+}
+
+/* Estilos para outras partes do site */
+header {
+    text-align: center;
+    padding: 0px 0;
+    background-color: #fff;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.imgmain {
+    border-radius: 20px;
+}
+

@@ -1,0 +1,273 @@
+/* Estilos para a área das avaliações */
+#areas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+/* Estilos para a área esquerda das avaliações */
+.area-esquerda {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Estilos para cada item de avaliação */
+.item {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para as estrelas de avaliação */
+.estrelas {
+    color: orangered;
+}
+
+.estrela {
+    font-size: 24px;
+}
+
+/* Estilos para as barras de progresso */
+.barra {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+    border-radius: 50px;
+}
+
+#areas label {
+    font-weight: bold;
+}
+
+.barra-preenchida {
+    height: 10px;
+    background-color: orangered;
+    border-radius: 20px;
+    width: 0; /* Inicialmente a largura é zero */
+    animation: carregamento 1s ease-in-out forwards; /* Aplica a animação de carregamento */
+}
+
+.numero {
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: "Archivo Black", sans-serif;
+    color: orangered;
+}
+
+/* Estilos para a área direita das avaliações */
+.area-direita {
+    grid-column: span 2; /* Ocupa duas colunas */
+    margin-top: 20px; /* Margem superior */
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Estilos para as imagens na área direita */
+.imagens {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.imagens img {
+    width: 50px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.imagens img:hover {
+    border: 1px solid orange;
+}
+
+
+/* Transição suave para a largura da barra preenchida */
+.barra-preenchida {
+    transition: width 1s ease-in-out;
+}
+
+/* Classe para largura completa da barra preenchida */
+.barra-preenchida.loaded {
+    width: 100%;
+}
+
+/* Área direita --------------------------------------------------------------------------------------- */
+
+/* Configuração da área principal */
+#areas {
+    display: flex; /* Layout flexível em linha */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Configuração da div central da imagem */
+.imagem-central {
+    text-align: center; /* Centralizar o conteúdo */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave padrão */
+    transition: box-shadow 2s ease; /* Transição suave da sombra */
+
+    display: flex; /* Layout flexível em linha */
+   
+}
+
+.imagem-central img {
+    width: 700px; /* Largura da imagem central */
+    height: auto; /* Manter proporção da imagem */
+    
+
+    border: 1px solid rgb(211, 120, 0); /* Borda alaranjada */
+    border-radius: 10px; /* Bordas arredondadas da imagem */
+
+    
+}
+
+.imagem-central img:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada ao passar o mouse */
+}
+
+/* Configuração da área da imagem da trilha */
+.area-direita {
+    display: flex; /* Layout flexível */
+    flex-direction: column; /* Itens em coluna */
+    justify-content: left; /* Justificar à esquerda */
+    margin: auto;
+     /* Centralizar horizontalmente */
+    width: 700px; /* Largura da área da imagem */
+    height: 200px; /* Altura da área da imagem */
+
+    justify-content: center;
+   
+
+}
+
+.imagens {
+    display: flex; /* Layout flexível */
+    flex-direction: column; /* Itens em coluna */
+    align-items: center; /* Alinhar itens ao centro */
+}
+
+/* Configuração da trilha de imagens */
+.trilha-imagens {
+    display: flex; /* Layout flexível em linha */
+    align-items: center; /* Centralizar verticalmente */
+    justify-content: center; /* Centralizar horizontalmente */
+    width: 100%; /* Ocupando toda a largura */
+    overflow: hidden; /* Ocultar conteúdo excedente */
+    height: 150px; /* Altura do contêiner da trilha */
+}
+
+.controle-esquerdo,
+.controle-direito {
+    cursor: pointer; /* Indicar que é clicável */
+    font-size: 24px; /* Tamanho da fonte */
+    user-select: none; /* Evitar seleção de texto */
+    /* padding: 0 10px; Espaçamento interno */
+}
+
+.controle-esquerdo:hover,
+.controle-direito:hover {
+    color: rgb(255, 94, 0); /* Cor ao passar o mouse */
+}
+
+/* Configuração das miniaturas de imagens na trilha */
+.imagens-miniaturas {
+    display: flex; /* Layout flexível em linha */
+    overflow-x: auto; /* Rolagem horizontal */
+
+    height: 80px; /* Altura do contêiner das miniaturas */
+
+    width: 100%; /* Largura total */
+    gap: 15px; /* Espaço entre as imagens */
+
+
+    
+}
+
+.imagens-miniaturas img {
+    width: auto; /* Largura das imagens da trilha */
+    height: 60px; /* Altura das imagens da trilha */
+    cursor: pointer; /* Indicar que é clicável */
+    transition: transform 3s; /* Transição suave */
+
+
+    border: 1px solid rgb(211, 120, 0); /* Borda alaranjada */
+    border-radius: 10px;
+
+}
+
+.imagens-miniaturas img:hover {
+    /* transform: scale(1.5);  */
+    /* Aumentar tamanho ao passar o mouse */
+
+    border: 2px solid rgb(211, 120, 0); /* Borda alaranjada */
+}
+
+/* Adicionar rolagem horizontal na trilha de imagens */
+.imagens-miniaturas::-webkit-scrollbar {
+    height: 5px; /* Altura da barra de rolagem */
+    background-color: rgba(128, 128, 128, 0.452); /*Mudar cor do fundo da barra de rolagem*/
+    
+}
+
+.imagens-miniaturas::-webkit-scrollbar-thumb {
+    background-color: #888; /* Cor do polegar da barra de rolagem */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Configuração do movimento dos botões de controle */
+.controle-esquerdo,
+.controle-direito {
+    cursor: pointer; /* Indicar que é clicável */
+    font-size: 36px; /* Tamanho da fonte */
+    user-select: none; /* Evitar seleção de texto */
+    padding: 0 10px; /* Espaçamento interno */
+    color: rgb(255, 94, 0); /* Cor ao passar o mouse */
+
+}
+
+.controle-esquerdo:hover,
+.controle-direito:hover {
+    color: #88888800; /*Vazio - Apenas para evitar bugg */
+}
+
+/* Centralizar verticalmente as imagens da trilha */
+.imagens-miniaturas img {
+    align-self: center; /* Centralizar verticalmente */
+}
+
+
+/* Configuração da nova div MaisAvaliacoes */
+.MaisAvaliacoes {
+    text-align: left; /* Alinhado à esquerda */
+    font-size: 16px; /* Tamanho da fonte */
+    
+    color: rgb(250, 112, 0); /* Cor da fonte */
+    /* margin: 20px 0; Margem superior e inferior */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid orangered; /* Borda cinza clara */
+    border-radius: 5px; /* Bordas arredondadas */
+    background-color: #f9f9f9; /* Cor de fundo suave */
+}
+
+
+/* Ataulização */
+/* Configuração da nova div MaisAvaliacoes */
+.MaisAvaliacoes {
+    text-align: left; /* Alinhado à esquerda */
+    font-size: 16px; /* Tamanho da fonte */
+    color: rgb(247, 111, 0); /* Cor da fonte */
+    margin-bottom: 10px; /* Margem inferior reduzida */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ff3c00; /* Borda cinza clara */
+    border-radius: 5px; /* Bordas arredondadas */
+    background-color: #f9f9f9; /* Cor de fundo suave */
+    margin-top: 15px;
+}
+
+/* Ajuste na margem inferior da trilha de imagens */
+.trilha-imagens {
+    margin-top: -30px; /* Margem superior reduzida */
+    /* Demais estilos mantidos conforme anterior */
+}

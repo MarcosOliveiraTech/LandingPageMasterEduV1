@@ -1,0 +1,95 @@
+#NossoDiferencial {
+    background-color: #fff;
+    padding: 10px;
+}
+
+#NossoDiferencial h2 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 20px;
+    /* text-align: justify; */
+}
+
+#NossoDiferencial p {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    font-size: 1.2em;
+    text-align: justify;
+    
+    margin-bottom: 20px;
+
+    
+}
+
+.image-container {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-box {
+    position: relative;
+    flex: 1;
+    transition: flex 0.5s ease, transform 0.5s ease;
+    
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    
+}
+
+.image-box .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    color: #fff;
+    
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+.image-box:hover {
+    flex: 3;
+}
+
+.image-box:hover .overlay {
+    display: flex;
+}
+
+.image-container .image-box:not(:hover) {
+    transform: translateY(50px); /* Move down the non-hovered images */
+    flex: 1.8; /* Adjust this value to ensure all images fit within the container when one is hovered */
+    border-radius: 10px;
+}
+
+.image-box h3 {
+    margin: 0;
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgba(247, 80, 3, 0.774);
+    border-radius: 10px;
+    width: 87%;
+    
+}
+
+.image-box p {
+    margin: 0;
+    font-size: 14px;
+    padding: 10px;
+    width: 87%;
+    background-color: rgba(219, 80, 0, 0.856);
+    border-radius: 10px;
+}
